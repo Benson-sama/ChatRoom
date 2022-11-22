@@ -1,0 +1,456 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="ChatRoom.Model.Applications.Application">
+    <Position X="3.5" Y="0.5" Width="3" />
+    <AssociationLine Name="consoleSettings" Type="ChatRoom.Model.ConsoleModel.ConsoleSettings" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.5" Y="2.25" />
+        <Point X="2.875" Y="2.25" />
+        <Point X="2.875" Y="3.25" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAAEAIQAAgAIAAAgAI=</HashCode>
+      <FileName>Model\Applications\Application.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="renderer" />
+      <Field Name="mainMenu" />
+      <Field Name="consoleSettings" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ChatRoom.Model.ConsoleModel.ConsoleSettings">
+    <Position X="0.5" Y="3.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>ACAAgAAAAAAiAAAAAgACAAAACAAAAAAAABAAAAAAAIA=</HashCode>
+      <FileName>Model\ConsoleModel\ConsoleSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatRoom.Model.EnhancedNS.EnhancedNetworkStreamDataReceivedEventArgs">
+    <Position X="31" Y="12.25" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAABAAAAAQAAAAAAA=</HashCode>
+      <FileName>Model\EnhancedNS\EnhancedNetworkStreamDataReceivedEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatRoom.Model.EnhancedNS.EnhancedNetworkStream">
+    <Position X="26.75" Y="12.25" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAEAAAAAIQAAACAAAEIEAAIA=</HashCode>
+      <FileName>Model\EnhancedNS\EnhancedNetworkStream.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="listenerThreadArguments" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ChatRoom.Model.EnhancedTCPC.EnhancedTcpClient">
+    <Position X="21.25" Y="12.25" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>AEAgAABAAACAUAgACAAAAAAAAAMIABAhFAAABgEAEAQ=</HashCode>
+      <FileName>Model\EnhancedTCPC\EnhancedTcpClient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatRoom.Model.EnhancedNS.ListenerThreadArguments">
+    <Position X="26.75" Y="16.25" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAECAAABAAAAAAAAAAAAAAAIAAAAKAAAAAAAAAA=</HashCode>
+      <FileName>Model\EnhancedNS\ListenerThreadArguments.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatRoom.Model.ApplicationMenu.Menu">
+    <Position X="4.25" Y="3" Width="2.25" />
+    <AssociationLine Name="menuEntries" Type="ChatRoom.Model.ApplicationMenu.MenuEntry" FixedFromPoint="true">
+      <Path>
+        <Point X="5.25" Y="5.391" />
+        <Point X="5.25" Y="6" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.059" Y="0.194" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="MenuEntries" Type="ChatRoom.Model.ApplicationMenu.MenuEntry">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.127" Y="0.193" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AQAAAAFAAAAAAACAEAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ApplicationMenu\Menu.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="menuEntries" />
+      <Property Name="MenuEntries" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ChatRoom.Model.ApplicationMenu.MenuEntry">
+    <Position X="4.5" Y="6" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ApplicationMenu\MenuEntry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatRoom.Model.ConsoleModel.Program">
+    <Position X="0.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Model\ConsoleModel\Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatRoom.View.Renderer">
+    <Position X="8" Y="0.5" Width="7.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAgAAAAAAAAAAAAAAICAQIAAAAAAAIAA=</HashCode>
+      <FileName>View\Renderer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatRoom.Model.Messages.Message">
+    <Position X="5.75" Y="16" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Messages\Message.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatRoom.Model.Messages.AliveMessage">
+    <Position X="0.5" Y="19" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Messages\AliveMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatRoom.Model.Messages.ClientMessage">
+    <Position X="2" Y="16" Width="3" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Model\Messages\ClientMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatRoom.Model.Messages.ServerMessage">
+    <Position X="1" Y="13" Width="5" />
+    <InheritanceLine Type="ChatRoom.Model.Messages.ClientMessage" FixedToPoint="true">
+      <Path>
+        <Point X="3.5" Y="16" />
+        <Point X="3.5" Y="15.328" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Model\Messages\ServerMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatRoom.Model.EnhancedTCPC.DisconnectedEventArgs">
+    <Position X="23.5" Y="18.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\EnhancedTCPC\DisconnectedEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatRoom.Model.EnhancedTCPC.ConnectedEventArgs">
+    <Position X="21.25" Y="19.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\EnhancedTCPC\ConnectedEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatRoom.Model.EnhancedTCPC.AliveThreadArguments">
+    <Position X="21.25" Y="18.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Model\EnhancedTCPC\AliveThreadArguments.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatRoom.Model.EnhancedTCPC.AliveMessageReceivedEventArgs">
+    <Position X="23.5" Y="20" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\EnhancedTCPC\AliveMessageReceivedEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatRoom.Model.Serialiser.ClientMessageSerialiser">
+    <Position X="7" Y="23.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAABAAACAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Serialiser\ClientMessageSerialiser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatRoom.Model.Serialiser.ServerMessageSerialiser">
+    <Position X="10" Y="23.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAABAAACAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Serialiser\ServerMessageSerialiser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatRoom.Model.Applications.ClientApplication">
+    <Position X="8" Y="9.25" Width="6.25" />
+    <AssociationLine Name="messages" Type="ChatRoom.Model.Messages.ServerMessage" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8" Y="13.188" />
+        <Point X="7" Y="13.188" />
+        <Point X="7" Y="13.188" />
+        <Point X="6" Y="13.188" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-0.364" Y="0.34" Height="0.182" Width="2.204" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="messageParser" Type="ChatRoom.Model.MessageParser" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="13.938" Y="9.25" />
+        <Point X="13.938" Y="3.764" />
+        <Point X="16" Y="3.764" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.566" Y="-0.456" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="localUser" Type="ChatRoom.Model.User" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.188" Y="15.68" />
+        <Point X="10.188" Y="17.062" />
+        <Point X="14.75" Y="17.062" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.55" Y="0.141" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="participatingUsers" Type="ChatRoom.Model.User" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.625" Y="15.68" />
+        <Point X="11.625" Y="16.375" />
+        <Point X="14.75" Y="16.375" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.404" Y="0.245" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>gEAAABKAAAAIgAgBAgQAhICAIAAAQAIBABCCAAAAggI=</HashCode>
+      <FileName>Model\Applications\ClientApplication.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="server" />
+      <Field Name="messageParser" />
+      <Field Name="renderer" />
+      <Field Name="localUser" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="messages" />
+      <Field Name="participatingUsers" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ChatRoom.Model.Applications.ServerApplication">
+    <Position X="14.75" Y="6.5" Width="5.25" />
+    <AssociationLine Name="keyboardWatcher" Type="ChatRoom.Model.ConsoleModel.Watcher.KeyboardWatcher" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="20" Y="9.338" />
+        <Point X="24.375" Y="9.338" />
+        <Point X="24.375" Y="3.968" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.466" Y="3.193" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="users" Type="ChatRoom.Model.User">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-1.744" Y="0.237" Height="0.182" Width="1.43" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="clients" Type="ChatRoom.Model.EnhancedTCPC.EnhancedTcpClient" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="20" Y="9.941" />
+        <Point X="23.562" Y="9.941" />
+        <Point X="23.562" Y="12.25" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.204" Y="0.362" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="messageParser" Type="ChatRoom.Model.MessageParser">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-2.648" Y="1.255" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>qwAAAgAIBAIAAAAAAgAABBAgQIAAAABBAAACEAAAAAI=</HashCode>
+      <FileName>Model\Applications\ServerApplication.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="keyboardWatcher" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="users" />
+      <Field Name="clients" />
+      <Field Name="messageParser" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ChatRoom.Model.Serialiser.AliveMessageSerialiser">
+    <Position X="12" Y="21.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAABAAACAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Serialiser\AliveMessageSerialiser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatRoom.Model.ConsoleModel.Watcher.KeyboardWatcherThreadArguments">
+    <Position X="27" Y="3" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Model\ConsoleModel\Watcher\KeyboardWatcherThreadArguments.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatRoom.Model.ConsoleModel.Watcher.OnKeyPressedEventArgs">
+    <Position X="25.25" Y="1" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ConsoleModel\Watcher\OnKeyPressedEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatRoom.Model.Messages.ChangeNicknameMessage">
+    <Position X="9.25" Y="19" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Messages\ChangeNicknameMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatRoom.Model.Messages.ChangeColourMessage">
+    <Position X="6.5" Y="19" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Messages\ChangeColourMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatRoom.Model.Messages.ExitChatMessage">
+    <Position X="12.25" Y="19" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Messages\ExitChatMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatRoom.Model.Serialiser.ChangeNicknameMessageSerialiser">
+    <Position X="0.5" Y="21.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAACAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Serialiser\ChangeNicknameMessageSerialiser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatRoom.Model.Serialiser.ChangeColourMessageSerialiser">
+    <Position X="4.25" Y="21.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAABAAACAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Serialiser\ChangeColourMessageSerialiser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatRoom.Model.Serialiser.ExitChatMessageSerialiser">
+    <Position X="7.75" Y="21.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAABAAACAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Serialiser\ExitChatMessageSerialiser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatRoom.Model.User">
+    <Position X="14.75" Y="14.5" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>AAADAAIAAAACQAAAAEAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Model\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatRoom.Model.Applications.ActionLoggedEventArgs">
+    <Position X="20.25" Y="6.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAIAAAACA=</HashCode>
+      <FileName>Model\Applications\ActionLoggedEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatRoom.Model.Serialiser.UserListSerialiser">
+    <Position X="4" Y="23.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAABAAACAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Serialiser\UserListSerialiser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatRoom.Model.Messages.UserUpdateMessage">
+    <Position X="2.75" Y="19" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Model\Messages\UserUpdateMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatRoom.Model.ConsoleModel.Watcher.KeyboardWatcher">
+    <Position X="21.25" Y="1" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AIAAABAAACEAAAEAAAAAAAAAAAAABBAAIAAAAAAAAAA=</HashCode>
+      <FileName>Model\ConsoleModel\Watcher\KeyboardWatcher.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="threadArguments" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ChatRoom.Model.Serialiser.UserUpdateMessageSerialiser">
+    <Position X="0.5" Y="23.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAABAAACAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Serialiser\UserUpdateMessageSerialiser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatRoom.Model.EnhancedTCPC.EnhancedTcpClientDataReceivedEventArgs">
+    <Position X="21.25" Y="21.25" Width="7.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAABAAAgAQAAIAAAA=</HashCode>
+      <FileName>Model\EnhancedTCPC\EnhancedTcpClientDataReceivedEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatRoom.Model.Extensions">
+    <Position X="0.5" Y="8.75" Width="6" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAACAAAAAAAQIAAQAAAAAAA=</HashCode>
+      <FileName>Model\Extensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatRoom.Model.MessageParser">
+    <Position X="16" Y="0.5" Width="4.75" />
+    <AssociationLine Name="enhancedTcpClient" Type="ChatRoom.Model.EnhancedTCPC.EnhancedTcpClient" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="20.75" Y="0.625" />
+        <Point X="30.909" Y="0.625" />
+        <Point X="30.909" Y="10.55" />
+        <Point X="25.5" Y="10.55" />
+        <Point X="25.5" Y="12.25" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-3.561" Y="1.988" Height="0.182" Width="1.531" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="EnhancedTcpClient" Type="ChatRoom.Model.EnhancedTCPC.EnhancedTcpClient" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="20.75" Y="0.812" />
+        <Point X="30.367" Y="0.812" />
+        <Point X="30.367" Y="9.598" />
+        <Point X="25.125" Y="9.598" />
+        <Point X="25.125" Y="12.25" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-4.037" Y="2.832" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAEAAAAAgAAAAAAAAAAAAAAQABAEgAAEAoAAAA=</HashCode>
+      <FileName>Model\MessageParser.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="enhancedTcpClient" />
+      <Property Name="EnhancedTcpClient" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ChatRoom.View.ChatRoomRenderer">
+    <Position X="8" Y="3.75" Width="5.25" />
+    <InheritanceLine Type="ChatRoom.View.Renderer" FixedFromPoint="true">
+      <Path>
+        <Point X="10.625" Y="3.209" />
+        <Point X="10.625" Y="3.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAQAYAIAAA0AIAAACAAAACIAAEEAAA=</HashCode>
+      <FileName>View\ChatRoomRenderer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
